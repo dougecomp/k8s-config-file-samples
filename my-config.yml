@@ -1,0 +1,28 @@
+apiVersion: v1
+data:
+  host: host
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"kind":"ConfigMap","apiVersion":"v1","metadata":{"name":"my-config","creationTimestamp":null},"data":{"host":"host"}}
+  creationTimestamp: "2020-07-15T16:35:35Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:host: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl
+    operation: Update
+    time: "2020-07-15T16:35:35Z"
+  name: my-config
+  namespace: default
+  resourceVersion: "77949"
+  selfLink: /api/v1/namespaces/default/configmaps/my-config
+  uid: 9af3e3c6-355b-4b60-b770-1554e3772ffd
